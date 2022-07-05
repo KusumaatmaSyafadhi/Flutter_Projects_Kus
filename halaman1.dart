@@ -25,18 +25,7 @@ class halamanpertama extends StatelessWidget {
         title: const Text('Laptops', style: TextStyle(color: Colors.black),)
         ),
 
-        bottomNavigationBar: const GNav(
-        tabs: [
-
-          GButton(
-            icon: Icons.home,
-            text: 'Home',
-            
-            ),
-          GButton(icon: Icons.search, text: 'Search'),
-          GButton(icon: Icons.favorite, text: 'Favorites')
-          
-        ]),
+        
 
       body: SafeArea(
         child: Container(

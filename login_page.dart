@@ -2,7 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:proyekakhir/direction_page.dart';
+
+import 'package:proyekakhir/menu.dart';
 
 import 'package:proyekakhir/register_page.dart';
 import 'package:proyekakhir/styling.dart';
@@ -28,7 +29,7 @@ class loginpage extends StatelessWidget {
 
             SizedBox(height: 35),
 
-            Image.network('https://freepngclipart.com/download/school/56882-bending-euclidean-vector-technology-free-clipart-hd.png', width: 194, height: 67,),
+            Image.network('https://raw.githubusercontent.com/KusumaatmaSyafadhi/Flutter_Projects_Kus/main/56882-bending-euclidean-vector-technology-free-clipart-hd.png', width: 194, height: 67,),
 
             SizedBox(height: 35),
 
@@ -74,8 +75,9 @@ class loginpage extends StatelessWidget {
               margin: EdgeInsets.only(bottom: 35,top: 30),
               child:ElevatedButton(
               onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context){
-                  return halaman_arah();
+                Navigator.of(context).popUntil((route) => route.isFirst);
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context){
+                  return MainMenu();
                 }));
               },
               child: Text('Login', style: LoginText,),
@@ -109,7 +111,7 @@ class loginpage extends StatelessWidget {
                         left: BorderSide(width: 1, color: Colors.grey),
                         bottom: BorderSide(width: 1, color: Colors.grey)),
                       image: DecorationImage(
-                        image: NetworkImage('https://www.teahub.io/photos/full/11-115962_facebook-logo-png-transparent-background-facebook-png.png'),)
+                        image: NetworkImage('https://raw.githubusercontent.com/KusumaatmaSyafadhi/Flutter_Projects_Kus/main/facebook_logo.png'),)
                     ),
 
                   ),
@@ -125,7 +127,7 @@ class loginpage extends StatelessWidget {
                         left: BorderSide(width: 1, color: Colors.grey),
                         bottom: BorderSide(width: 1, color: Colors.grey)),
                       image: DecorationImage(
-                        image: NetworkImage('https://pngimg.com/uploads/google/google_PNG19635.png'),)
+                        image: NetworkImage('https://raw.githubusercontent.com/KusumaatmaSyafadhi/Flutter_Projects_Kus/main/google_logo.png'),)
                     ),
 
                   ),
@@ -141,7 +143,7 @@ class loginpage extends StatelessWidget {
                         left: BorderSide(width: 1, color: Colors.grey),
                         bottom: BorderSide(width: 1, color: Colors.grey)),
                       image: DecorationImage(
-                        image: NetworkImage('https://www.pngpix.com/wp-content/uploads/2016/07/PNGPIX-COM-Apple-Logo-PNG-Transparent.png.png'),)
+                        image: NetworkImage('https://raw.githubusercontent.com/KusumaatmaSyafadhi/Flutter_Projects_Kus/main/apple_logo.png'),)
                     ),
 
                   )

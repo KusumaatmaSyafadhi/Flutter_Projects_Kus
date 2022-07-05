@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:proyekakhir/styling.dart';
 
 import 'login_page.dart';
 
@@ -26,7 +27,7 @@ class registerpage extends StatelessWidget {
 
             SizedBox(height: 36),
 
-            Image.asset('assets/images/logo.png', width: 194, height: 67,),
+            Image.network('https://raw.githubusercontent.com/KusumaatmaSyafadhi/Flutter_Projects_Kus/main/56882-bending-euclidean-vector-technology-free-clipart-hd.png', width: 256, height: 128,),
 
             SizedBox(height: 35),
 
@@ -89,9 +90,9 @@ class registerpage extends StatelessWidget {
                   return loginpage();
                 }));
               },
-              child: Text('Register'),
+              child: Text('Register', style: LoginText),
               style: ElevatedButton.styleFrom(
-                primary: Color.fromRGBO(30, 35, 44, 1),
+                primary: Color.fromRGBO(30, 144, 255, 1),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))),
             ),),
             

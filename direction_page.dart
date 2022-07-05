@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:proyekakhir/halaman1.dart';
 import 'package:proyekakhir/halaman2.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
+
+import 'package:lottie/lottie.dart';
 
 class halaman_arah extends StatelessWidget {
   const halaman_arah({Key? key}) : super(key: key);
@@ -17,19 +18,8 @@ class halaman_arah extends StatelessWidget {
         systemOverlayStyle: SystemUiOverlayStyle.light ,
         iconTheme: IconThemeData(color: Colors.black),),
 
-      // ignore: prefer_const_constructors
-      bottomNavigationBar: GNav(
-        tabs: const [
-
-          GButton(
-            icon: Icons.home,
-            text: 'Home',
-            
-            ),
-          GButton(icon: Icons.search, text: 'Search'),
-          GButton(icon: Icons.favorite, text: 'Favorites')
-          
-        ]),  
+      
+        
 
         
 
@@ -44,7 +34,7 @@ class halaman_arah extends StatelessWidget {
               padding: EdgeInsets.all(30),
               child: Column(
                 children: [
-                  Image.network('https://cdn.shopify.com/s/files/1/1845/0077/products/b248a691-bb24-415b-b2fa-c191a1019912_6dfb1282-3538-4d34-bc42-1a0489b3c5d2_800x.jpg?v=1571472797')
+                  Lottie.network('https://assets7.lottiefiles.com/packages/lf20_s8pbrcfw.json')
                 ],
               ),
               ),
