@@ -4,6 +4,7 @@ import 'package:proyekakhir/halaman1.dart';
 import 'package:proyekakhir/halaman2.dart';
 
 import 'package:lottie/lottie.dart';
+import 'package:proyekakhir/styling.dart';
 
 class halaman_arah extends StatelessWidget {
   const halaman_arah({Key? key}) : super(key: key);
@@ -16,7 +17,8 @@ class halaman_arah extends StatelessWidget {
         backgroundColor: Colors.white,
         elevation: 0,
         systemOverlayStyle: SystemUiOverlayStyle.light ,
-        iconTheme: IconThemeData(color: Colors.black),),
+        iconTheme: IconThemeData(color: Colors.black),
+        title: Text('Kusuma Tech Store', style: JudulApp,),),
 
       
         

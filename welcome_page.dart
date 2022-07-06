@@ -21,7 +21,7 @@ class  welcomepage extends StatelessWidget {
           children: [
             Image.network('https://static.vecteezy.com/system/resources/previews/000/218/549/non_2x/women-character-skin-color-tone-vector-flat-illustration.jpg'),
 
-            Image.network('https://freepngclipart.com/download/school/56882-bending-euclidean-vector-technology-free-clipart-hd.png', width: 256, height: 128,),
+            Image.network('https://raw.githubusercontent.com/KusumaatmaSyafadhi/Flutter_Projects_Kus/main/56882-bending-euclidean-vector-technology-free-clipart-hd.png', width: 256, height: 128,),
 
             Container(
               padding: EdgeInsets.only(right: 22, left: 22),
